@@ -207,11 +207,11 @@ def big_shoe_rebounds
             if spec == :shoe
               if biggest_shoe == nil
                 biggest_shoe = value
-                player_rebounds = game_hash[which][:players][player][:rebounds]
+                player_rebounds = game_hash[which][:players][name][:rebounds]
               else
                 if value > biggest_shoe
                   biggest_shoe = value
-                  player_rebounds = game_hash[which][:players][player][:rebounds]
+                  player_rebounds = game_hash[which][:players][name][:rebounds]
                 end
               end
             end
@@ -222,4 +222,5 @@ def big_shoe_rebounds
   end
   return player_rebounds
 end
+
 big_shoe_rebounds
