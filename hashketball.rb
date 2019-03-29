@@ -186,3 +186,13 @@ def player_numbers(team_name)
   return array
 end
 
+def player_stats(name)
+  game_hash.each do |which, desc|
+    desc.each do |data, attribute|
+      if attribute.include?(name) 
+        return game_hash[who][data][name]
+      end
+    end
+  end
+end
+    
