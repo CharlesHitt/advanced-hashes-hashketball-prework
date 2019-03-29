@@ -205,3 +205,7 @@ def big_shoe_rebounds
         attribute.each do |name, stats|
           stats.each do |spec, value|
             if spec == :shoe
+              if biggest_shoe == nil
+                biggest_shoe = value
+                player_rebounds = game_hash[which][:players][player][:rebounds]
+              elseif 
