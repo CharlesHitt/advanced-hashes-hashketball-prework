@@ -197,6 +197,8 @@ def player_stats(name)
 end
 
 def big_shoe_rebounds
+  biggest_shoe = nil
+  player_rebounds = nil
   game_hash.each do |which, desc|
     desc.each do |data, attribute|
       if data == :players
