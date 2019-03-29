@@ -166,6 +166,3 @@ end
 def player_numbers(team_name)
   array = []
   game_hash.each do |where, what|
-    what.each do |label, data|
-      if label == :players
-        data.each do |name, stats|
