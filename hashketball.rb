@@ -208,4 +208,11 @@ def big_shoe_rebounds
               if biggest_shoe == nil
                 biggest_shoe = value
                 player_rebounds = game_hash[which][:players][player][:rebounds]
-              elsif 
+              else
+                if value > biggest_shoe
+                  biggest_shoe = value
+                  player_rebounds = game_hash[which][:players][player][:rebounds]
+                end
+              end
+            end
+            
