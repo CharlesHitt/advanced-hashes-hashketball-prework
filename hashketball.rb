@@ -165,4 +165,4 @@ end
 
 def player_numbers(team_name)
   array = []
-  game_hash.each do |where, what|
+  if game_hash[]
